@@ -1,0 +1,170 @@
+dataset:
+  id: atf_manufacturing
+  title: "ATF Firearms Manufacturing and Export Reports"
+  description: "Machine-readable tables derived from ATF annual firearms manufacturing and export PDFs (2000-2019)."
+  maintainer: "TODO: maintainer name or organization"
+  contact_email: "TODO: contact email"
+  last_updated: "TODO: ISO-8601 timestamp for most recent data refresh"
+  license: "TODO: data usage license"
+  caveats:
+    - year: 2001
+      issue: "Discrepancy between cover-page totals and table sums noted in README."
+      resolution: "TODO: document how the discrepancy was handled in the cleaned dataset."
+      references:
+        - type: "internal"
+          location: "README.md"
+
+files:
+  - path: "Combined_Data/All_Manufacturing.xlsx"
+    description: "Consolidated manufacturing totals across all manufacturers."
+    schema_source: "TODO: link to schema or data dictionary if available"
+    last_updated: "TODO: ISO-8601 timestamp for file-specific refresh"
+    source_pdfs:
+      - year: "TODO: report year"
+        url: "TODO: https://www.atf.gov/..."
+        retrieved_on: "TODO: ISO-8601 date"
+        checksum: "TODO: optional checksum for downloaded PDF"
+    transformations:
+      - step: "TODO: describe transformation or cleaning logic"
+        tool: "TODO: script/tool used"
+        inputs:
+          - "TODO: input filename(s)"
+
+  - path: "Combined_Data/All_Exports.xlsx"
+    description: "Consolidated export totals across all manufacturers."
+    schema_source: "TODO: link to schema or data dictionary if available"
+    last_updated: "TODO: ISO-8601 timestamp for file-specific refresh"
+    source_pdfs:
+      - year: "TODO: report year"
+        url: "TODO: https://www.atf.gov/..."
+        retrieved_on: "TODO: ISO-8601 date"
+        checksum: "TODO: optional checksum for downloaded PDF"
+    transformations:
+      - step: "TODO: describe transformation or cleaning logic"
+        tool: "TODO: script/tool used"
+        inputs:
+          - "TODO: input filename(s)"
+
+  - path: "Data_by_Type/"
+    description: "Per-weapon-type aggregates extracted from each annual report."
+    last_updated: "TODO: ISO-8601 timestamp for directory-level refresh"
+    source_pdfs:
+      - year: "TODO: report year"
+        url: "TODO: https://www.atf.gov/..."
+        retrieved_on: "TODO: ISO-8601 date"
+    notes:
+      - "TODO: add directory-specific caveats or processing notes"
+
+source_index:
+  - year: 2000
+    pdf_url: "TODO: https://www.atf.gov/..."
+    archive_url: "TODO: web archive fallback"
+    retrieved_on: "TODO: ISO-8601 date"
+    status: "TODO: available | missing | superseded"
+  - year: 2001
+    pdf_url: "TODO: https://www.atf.gov/..."
+    archive_url: "TODO: web archive fallback"
+    retrieved_on: "TODO: ISO-8601 date"
+    status: "TODO: available | missing | superseded"
+    caveats:
+      - "Cover page totals conflict with table sums; verify chosen value."
+  - year: 2002
+    pdf_url: "TODO: https://www.atf.gov/..."
+    archive_url: "TODO: web archive fallback"
+    retrieved_on: "TODO: ISO-8601 date"
+    status: "TODO"
+  - year: 2003
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2004
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2005
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2006
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2007
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2008
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2009
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2010
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2011
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2012
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2013
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2014
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2015
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2016
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2017
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2018
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+  - year: 2019
+    pdf_url: "TODO"
+    archive_url: "TODO"
+    retrieved_on: "TODO"
+    status: "TODO"
+
+processing_log:
+  - timestamp: "TODO: ISO-8601 timestamp"
+    actor: "TODO: person or automation"
+    action: "TODO: describe processing step"
+    inputs:
+      - "TODO: input file or source"
+    outputs:
+      - "TODO: output file"
+    notes: "TODO: additional details"
